@@ -1,0 +1,9 @@
+p {
+    padding: 50px;
+    border-width: 2px;
+    border-color: brown;
+    border-style:solid ;
+    color: green;
+    font-weight: bold;
+    font-size: larger;
+}

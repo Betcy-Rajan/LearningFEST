@@ -1,0 +1,7 @@
+.rainbow-text {
+    width: 60%;
+    font-weight: 700;
+    color: grey;
+    text-align: center;
+    background-image: linear-gradient(to right, red, orange,yellow, green, blue, indigo, violet);
+  }

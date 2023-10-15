@@ -1,0 +1,13 @@
+.sharp {
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 20px; 
+}
+.corners {
+    padding: 8px;
+    border: 2px solid red;
+    border-top-left-radius: 45px; 
+    border-top-right-radius: 12px; 
+    border-bottom-right-radius: 45px; 
+    border-bottom-left-radius: 12px; 
+}

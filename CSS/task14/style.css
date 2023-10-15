@@ -1,0 +1,9 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+}
+.child {
+    width: auto;
+    margin-top: 10px;
+    border: 1px solid black;
+}
