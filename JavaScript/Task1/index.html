@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: center;
+        }
+        #placeholder {    
+            height: 100px;
+            width: 100px;
+            padding: 50px;
+            margin: 50px auto;
+            border: 1px solid gray;
+            border-radius: 10px;  
+            font-size:80px;
+        }
+        #button {
+            background-color: rgb(82, 186, 179);
+            border-radius: 6px;
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-transform: uppercase;
+            width: 200px;
+            cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    
+        <p id="placeholder"> 
+           
+        </p>
+    
+    <button id="button" onclick="display()">Roll dice</button>
+
+    <script>
+       function display() {
+            var number=Math.floor(Math.random()*6)+1;
+            console.log(number)
+            document.getElementById("placeholder").innerHTML=number
+       } 
+    </script>
+</body>
+</html>

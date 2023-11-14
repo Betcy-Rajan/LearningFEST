@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+           font-family: Helvetica, Arial, sans-serif;
+           text-align: center;
+       }
+       .box {    
+           
+           padding: 50px;
+           
+           border: 1px solid gray;
+           border-radius: 10px;  
+           font-size:50px;
+          
+       }
+       #button {
+           background-color: rgb(82, 186, 179);
+           border-radius: 6px;
+           border: none;
+           color: rgb(255, 255, 255);
+           padding: 10px;
+           text-transform: uppercase;
+           width: 200px;
+           cursor: pointer;
+}
+   </style>
+</head>
+<body>
+    <div class="box">
+        <p>EMI CALCULATOR</p>
+        <label for="amount">Enter Loan Amount</label>
+        <input type="number" id="amt">
+        <br><br>
+        <label for="Rate">Enter Rate </label>
+        <input type="number" id="rate">
+        <br><br>
+        <label for="time">Enter Time</label>
+        <input type="number" id="time">
+        <br><br>
+        <p>TOTAL</p>
+        <h1 id="result"></h1>
+        <button  id="button" onclick="display()">CALCULATE</button>
+    </div>
+    <script>
+        function display() {
+            var amount=document.getElementById("amt").value
+            var rate=document.getElementById("rate").value
+            var time=document.getElementById("time").value
+            const interest = (amount * (rate * 0.01)) / time;
+            let emi = ((amount / time) + interest).toFixed(2);
+            document.getElementById("result").innerHTML=emi;
+        }
+        
+    </script>
+</body>
+</html>

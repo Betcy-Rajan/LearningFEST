@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: center;
+        }
+        .box {    
+            
+            padding: 50px;
+            
+            border: 1px solid gray;
+            border-radius: 10px;  
+            font-size:50px;
+           
+        }
+        #button {
+            background-color: rgb(82, 186, 179);
+            border-radius: 6px;
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-transform: uppercase;
+            width: 200px;
+            cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <label>Enter the first number </label>
+        <input id="num1" type="number">
+        <br> <br>
+
+        <label>Enter the second number </label>
+        <input id="num2" type="number">
+        <br> <br>
+        <p>RESULT</p>
+        <h1 id="result"></h1>
+        <button  id="button" onclick="display()">SUM</button>
+    </div>
+    
+   
+    <script>
+        function display() {
+            var n1=document.getElementById("num1").value;
+            var n2=document.getElementById("num2").value;
+            var sum=parseInt(n1)+parseInt(n2)
+            console.log(sum)
+            document.getElementById("result").innerHTML=sum
+        }
+       
+    </script>
+</body>
+</html>
